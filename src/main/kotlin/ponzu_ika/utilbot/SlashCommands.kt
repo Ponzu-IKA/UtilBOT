@@ -48,7 +48,7 @@ class SlashCommands :ListenerAdapter(){
 
                 val efficiency = energy/cePerTick
 
-                event.reply("青レーザー本数: $blueCount \n緑レーザー本数: $greenCount \n赤レーザー本数: $redCount \n白レーザー本数: $whiteCount \n総エネルギー量: ${Util().round(energy,4)}\n消費エネルギー: ${Util().round(cePerTick,2)} CE\\t\n変換効率: ${Util().round(efficiency,4)}").queue()
+                event.reply("青レーザー本数: $blueCount \n緑レーザー本数: $greenCount \n赤レーザー本数: $redCount \n白レーザー本数: $whiteCount \n総エネルギー量: ${Util().roundAndString(energy,4)}\n消費エネルギー: ${Util().roundAndString(cePerTick,2)} CE\\t\n変換効率: ${Util().roundAndString(efficiency,4)}").queue()
             }
         }
     }
