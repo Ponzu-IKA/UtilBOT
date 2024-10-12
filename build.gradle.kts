@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.23"
+    kotlin("jvm") version "2.0.21"
     id("com.github.johnrengelman.shadow") version "8.1.1"
     application
 }
@@ -12,8 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
-    implementation("net.dv8tion","JDA","5.0.0-beta.24")
+    implementation("net.dv8tion","JDA","5.1.2")
     testImplementation(kotlin("test"))
 }
 
@@ -25,5 +24,12 @@ tasks.test {
     useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(16)
+    jvmToolchain(21)
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+        vendor.set(JvmVendorSpec.JETBRAINS)
+    }
 }
