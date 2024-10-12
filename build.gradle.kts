@@ -13,7 +13,7 @@ repositories {
 
 dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
-    implementation("net.dv8tion","JDA","5.0.0-beta.24")
+    implementation("net.dv8tion","JDA","5.1.2")
     testImplementation(kotlin("test"))
 }
 
