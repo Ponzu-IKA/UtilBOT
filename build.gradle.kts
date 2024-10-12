@@ -4,7 +4,7 @@ plugins {
     application
 }
 
-group = "ponzu_ika.occalc"
+group = "ponzu_ika.utilbot"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -17,7 +17,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("ponzu_ika.occalc.MainKt")
+    mainClass.set("ponzu_ika.utilbot.MainKt")
 }
 
 tasks.test {

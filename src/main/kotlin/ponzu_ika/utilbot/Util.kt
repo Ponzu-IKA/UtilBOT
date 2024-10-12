@@ -1,4 +1,4 @@
-package ponzu_ika.occalc
+package ponzu_ika.utilbot
 
 import kotlin.math.pow
 import kotlin.math.roundToInt
